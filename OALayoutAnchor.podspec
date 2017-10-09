@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
   `OALayoutAnchor` is an effort to port the amazing [NSLayoutAnchor](https://developer.apple.com/library/prerelease/mac/documentation/AppKit/Reference/NSLayoutAnchor_ClassReference/index.html) introduced in iOS 9 to iOS 7.
 
-  `OALayoutAnchor` is a 100% port of `NSLayoutAnchor` to iOS 7, it aims to provide the same funtionality to iOS 7, and rollback to `NSLayoutAnchor` on iOS 9 and up.
+  `OALayoutAnchor` is a 100% port of `NSLayoutAnchor` to iOS 7 and OSX 10.9, it aims to provide the same funtionality to iOS 7, and rollback to `NSLayoutAnchor` on iOS 9 and up.
                        DESC
   s.homepage         = "https://github.com/oarrabi/OALayoutAnchor"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
@@ -27,13 +27,10 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.9'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/IOS/**/*','Pod/Classes/Core/**/*'
+  s.ios.source_files = 'Pod/Classes/IOS/**/*'
+  s.osx.source_files = 'Pod/Classes/OSX/**/*'
   s.resource_bundles = {
     'OALayoutAnchor' => ['Pod/Assets/*.png']
   }
 
-  s.subspec 'core' do |core|
-    core.public_header_files = 'Pod/Classes/Core/**/*.{h}'
-    core.source_files = 'Pod/Classes/Core/**/*.{h,m}'
-  end
 end
