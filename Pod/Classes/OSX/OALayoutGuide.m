@@ -37,32 +37,32 @@
 
 - (OALayoutXAxisAnchor *)leadingAnchor {
     return [self getAnchorAndCreateItIfNeededWithKey:_cmd anchorClass:[OALayoutXAxisAnchor class]
-                                     layoutAttribute:NSLayoutAttributeLeadingMargin];
+                                     layoutAttribute:NSLayoutAttributeLeading];
 }
 
 - (OALayoutXAxisAnchor *)trailingAnchor {
     return [self getAnchorAndCreateItIfNeededWithKey:_cmd anchorClass:[OALayoutXAxisAnchor class]
-                                     layoutAttribute:NSLayoutAttributeTrailingMargin];
+                                     layoutAttribute:NSLayoutAttributeTrailing];
 }
 
 - (OALayoutXAxisAnchor *)leftAnchor {
     return [self getAnchorAndCreateItIfNeededWithKey:_cmd anchorClass:[OALayoutXAxisAnchor class]
-                                     layoutAttribute:NSLayoutAttributeLeftMargin];
+                                     layoutAttribute:NSLayoutAttributeLeft];
 }
 
 - (OALayoutXAxisAnchor *)rightAnchor {
     return [self getAnchorAndCreateItIfNeededWithKey:_cmd anchorClass:[OALayoutXAxisAnchor class]
-                                     layoutAttribute:NSLayoutAttributeRightMargin];
+                                     layoutAttribute:NSLayoutAttributeRight];
 }
 
 - (OALayoutYAxisAnchor *)topAnchor {
     return [self getAnchorAndCreateItIfNeededWithKey:_cmd anchorClass:[OALayoutYAxisAnchor class]
-                                     layoutAttribute:NSLayoutAttributeTopMargin];
+                                     layoutAttribute:NSLayoutAttributeTop];
 }
 
 - (OALayoutYAxisAnchor *)bottomAnchor {
     return [self getAnchorAndCreateItIfNeededWithKey:_cmd anchorClass:[OALayoutYAxisAnchor class]
-                                     layoutAttribute:NSLayoutAttributeBottomMargin];
+                                     layoutAttribute:NSLayoutAttributeBottom];
 }
 
 - (OALayoutDimension *)widthAnchor {
@@ -77,12 +77,12 @@
 
 - (OALayoutXAxisAnchor *)centerXAnchor {
     return [self getAnchorAndCreateItIfNeededWithKey:_cmd anchorClass:[OALayoutXAxisAnchor class]
-                                     layoutAttribute:NSLayoutAttributeCenterXWithinMargins];
+                                     layoutAttribute:NSLayoutAttributeCenterX];
 }
 
 - (OALayoutYAxisAnchor *)centerYAnchor {
     return [self getAnchorAndCreateItIfNeededWithKey:_cmd anchorClass:[OALayoutYAxisAnchor class]
-                                     layoutAttribute:NSLayoutAttributeCenterYWithinMargins];
+                                     layoutAttribute:NSLayoutAttributeCenterY];
 }
 
 #pragma mark - Private methods
